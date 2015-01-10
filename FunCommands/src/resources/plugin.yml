@@ -1,0 +1,41 @@
+name: FunCommands
+main: de.Lathanael.FC.FunCommands.FunCommands
+version: ${project.version} (BUILD ${git.build.time})
+author: Lathanael
+depend: [AdminCmd]
+description: >
+             Fun commands for AdminCmd.
+
+commands:
+    fc_slap:
+        description: Slaps the provided player, flags determine how hard.
+        aliases: [slap]
+        usage: /<command> <-flags> [player]
+    fc_rocket:
+        description: Shoots the provided player high into the air.
+        aliases: [rocket]
+        usage: /<command> <-flags> [player]
+    fc_attaint:
+        description: Attaint the player by changing his Displayname.
+        aliases: [attaint, nick]
+        usage: /<command> [player] [DispName]
+    fc_entomb:
+        description: Entomb a player in a cube of defined material, the flag -u removes the cube.
+        aliases: [entomb]
+        usage: /<command> <-flag> [player] <material>
+    fc_void:
+        description: Drop a player into the VOID, after his death the hole will be closed.
+        aliases: [void]
+        usage: /<command> [player]
+    fc_sacrifice:
+        description: Sacrifice a player. He will drop dead by no special means.
+        aliases: [sac, sacrifice]
+        usage: /<command> <-P player>
+    fc_barrage:
+        description: Hits the player with a barrage of arrows so he dies or sets him on fire until he dies
+        aliases: [barrage, bar]
+        usage: /<command> [arrow|fire] <-P player>
+    fc_wound:
+        description: "Wound the player so he has only left a minimum if life!"
+        aliases: [wound]
+        usage: /<command> <-P player>
